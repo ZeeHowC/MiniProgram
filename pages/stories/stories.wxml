@@ -1,0 +1,14 @@
+<!--pages/stories/stories.wxml-->
+<view class="banner" style="padding:20px 0px; height: 140px; background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://www.lewagon.com/api/v1/cities/shenzhen/cover?width=1200);">
+    <view class="h1" bindtap="changeTitle">{{title}}</view>
+    <view class="p">All stories</view>
+    <navigator class="btn btn-flat" url="/pages/post/post">Write a post</navigator>
+</view>
+
+
+<view class="card-product" wx:for="{{stories}}" wx:for-item="n">
+  <view class="card-product-infos" bindtap="">
+    <view class="h2" wx:if="{{n.desc === 'a bad boy'}}">{{ n.name }}</view>
+    <view class="p">{{n.desc}}</view>
+  </view>
+</view>

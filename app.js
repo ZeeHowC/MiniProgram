@@ -34,6 +34,17 @@ App({
     })
   },
   globalData: {
-    userInfo: null
+    userInfo: null,
+    stories: [{
+      name: 'First story',
+      desc: 'a bad boy'
+    }, {
+      name: 'Second story',
+      desc: 'A good girl'
+    }, {
+      name: 'Third story',
+      desc: 'A love story'
+    }],
+
   }
 })
